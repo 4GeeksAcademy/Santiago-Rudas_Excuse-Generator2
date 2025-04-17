@@ -30,12 +30,15 @@ window.onload = function () {
 
     document.getElementById("excuse").innerText = excuses[randomExcuses];
 
-    let img = document.createElement("img");
-    img.src = images[randomExcuses];
-    img.alt = "Excusa Visual";
-    img.className = "img-fluid rounded shadow mt-3";
-    img.style.width = "500px";
+    let imagenExcusa = document.createElement("img");
+    //imagenExcusa.src = images[randomExcuses];
+   //imagenExcusa.alt = "Excusa Visual";
+    //imagenExcusa.className = "";
+    //imagenExcusa.style.width = "500px";
 
-    document.getElementById("imagne-excusa").appendChild(img);
+    //imagenExcusa.innerHTML = 
+
+    document.getElementById("imagen-excusa").innerHTML = `<img alt="Excusa Visual" class="img-fluid rounded shadow mt-3"
+      src=${images[randomExcuses]} style="width: 5 00px;">`;
 
 };
